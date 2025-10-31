@@ -1,0 +1,4 @@
+codify.spec
+.env
+dist/
+build/
