@@ -40,16 +40,87 @@ O programa segue este fluxo:
 A codificação é baseada em **substituição simples** (monoalfabética) — ou seja, a correspondência entre caracteres e índices é sempre a mesma para uma dada chave.
 
 ---
+## 📸 Exemplos de Telas
+
+### Menu Inicial
+```
+=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+                                          Codificador de Texto
+=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Escolha uma opção:
+1 - Codificar
+2 - Decifrar
+3 - Gerar Chave
+0 - Sair
+Opção:
+```
+
+
+
+---
+
+### Tela de Codificação
+```
+=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+                                          Codificador de Texto
+=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Digite seu texto (pressione Enter para nova linha, digite FIM para terminar):
+hello world
+fim
+
+Texto encriptado
+[21, 48, 83, 83, 43, 16, 9, 43, 20, 83, 18]
+
+Pressione Enter para voltar ao menu...
+```
+
+
+
+---
+
+### Tela de Decifrar codigo
+```
+=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+                                          Codificador de Texto
+=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Digite o texto para Decifrar:
+[21, 48, 83, 83, 43, 16, 9, 43, 20, 83, 18]
+```
+
+
+
+---
+
+### Tela com texto Decifrado
+```
+=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+                                          Codificador de Texto
+=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Texto Decifrado
+hello world
+
+Pressione Enter para voltar ao menu...
+```
+### Tela de Geraçcão de Chave
+```
+=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+                                          Codificador de Texto
+=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Gerando nova chave...
+XOpô)YNbUIf,-S2MqdnHz'Át9áéÉú?çíaZ@âr
+AWiÂBÇsõT(j ÊeÓ1CÚk_Rvm6ÔxwÕ;oê.5QÃãEÍóD0J!V3KF4lgL:7h8GcPuy
+
+Pressione Enter para voltar ao menu...
+```
 
 ## 💻 Como Executar
 
 ### 1️⃣ Pré-requisitos
 - Python 3.8 ou superior instalado  
-- Sistema operacional: Windows, Linux ou macOS  
+- Sistema operacional: Windows
 - Opcional: `python-dotenv` se quiser carregar a chave de um arquivo `.env`
 
 ### 2️⃣ Executar o programa
 No terminal ou prompt de comando:
 
-```bash
-python codificador.py
+python codify.py
