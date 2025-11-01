@@ -6,8 +6,12 @@ load_dotenv()
 chave = os.getenv("CHAVE")
 
 
-
-
+# Função para exibir o cabeçalho
+def cabecalho(nome):
+    linha = "=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
+    print(linha)
+    print(f"{nome:^{len(linha)}}")
+    print(linha)
 # Função para gerar uma chave embaralhada
 def gerar_chave():
     caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 áéíóúÁÉÍÓÚâêôÂÊÔãõÃÕçÇ,.!?;:@-_()\n'"
@@ -20,14 +24,14 @@ def gerar_chave():
 # Função do menu
 def menu():
     while True:
-        print("======== Codificador de Texto ========\n")
+        cabecalho("Codificador de Texto")
         menu = input(
             "Escolha uma opção:\n1 - Codificar\n2 - Decifrar\n3 - Gerar Chave \n0 - Sair \nOpção: "
         )
         if menu == "1":
 
             limpar_tela()
-            print("======== Codificador de Texto ========\n")
+            cabecalho("Codificador de Texto")
             print("Digite seu texto (pressione Enter para nova linha, digite FIM para terminar):")
 
             linhas = []
@@ -47,13 +51,13 @@ def menu():
         elif menu == "2":
 
             limpar_tela()
-            print("======== Codificador de Texto ========\n")
+            cabecalho("Codificador de Texto")
             entrada = input("Digite o texto para Decifrar:\n")
             lista = [int(x.strip()) for x in entrada.strip("[]").split(",")]
             texto_decifrado = decifrar(lista)
             limpar_tela()
-            print("======== Codificador de Texto ========\n")
-            print(f"\n=========== Texto Decifrado ===========")
+            cabecalho("Codificador de Texto")
+            print("Texto Decifrado")
             print(texto_decifrado)
             input("\nPressione Enter para voltar ao menu...")
             limpar_tela()
@@ -61,7 +65,7 @@ def menu():
         elif menu == "3":
 
             limpar_tela()
-            print("======== Codificador de Texto ========\n")
+            cabecalho("Codificador de Texto")
             print("Gerando nova chave...")
             gerar_chave()
             input("\nPressione Enter para voltar ao menu...")
@@ -70,7 +74,7 @@ def menu():
         elif menu == "0":
 
             limpar_tela()
-            print("======== Codificador de Texto ========\n")
+            cabecalho("Codificador de Texto")
             print("Saindo...")
             exit()
 
