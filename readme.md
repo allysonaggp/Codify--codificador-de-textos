@@ -1,6 +1,6 @@
-# 🔐 Codificador de Texto
+# 🔐Codify-Codificador de Texto
 
-Um simples e eficiente **codificador e decodificador de texto em Python**, feito para transformar mensagens em listas de números e depois decifrá-las novamente usando uma **chave embaralhada**.  
+Um eficiente **codificador e decodificador de texto em Python**, feito para transformar mensagens em listas de números e depois decifrá-las novamente usando uma Chave de codificação.  
 Ideal para estudos de criptografia básica, lógica de programação e manipulação de strings em Python.
 
 ---
@@ -78,24 +78,14 @@ Pressione Enter para voltar ao menu...
 
 ---
 
-### Tela de Decifrar codigo
+### Tela com texto Decifrado
 ```
 =-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
                                           Codificador de Texto
 =-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 Digite o texto para Decifrar:
 [21, 48, 83, 83, 43, 16, 9, 43, 20, 83, 18]
-```
 
-
-
----
-
-### Tela com texto Decifrado
-```
-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-                                          Codificador de Texto
-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 Texto Decifrado
 hello world
 
