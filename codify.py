@@ -12,6 +12,8 @@ def cabecalho(nome):
     print(linha)
     print(f"{nome:^{len(linha)}}")
     print(linha)
+
+
 # Função para gerar uma chave embaralhada
 def gerar_chave():
     caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 áéíóúÁÉÍÓÚâêôÂÊÔãõÃÕçÇ,.!?;:@-_()\n'"
@@ -32,7 +34,9 @@ def menu():
 
             limpar_tela()
             cabecalho("Codificador de Texto")
-            print("Digite seu texto (pressione Enter para nova linha, digite FIM para terminar):")
+            print(
+                "Digite seu texto (pressione Enter para nova linha, digite FIM para terminar):"
+            )
 
             linhas = []
             while True:
@@ -80,7 +84,6 @@ def menu():
 
         else:
             limpar_tela()
-              
 
 
 # Função para sair do programa
